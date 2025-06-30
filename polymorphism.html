@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polymorphism - My Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Python Polymorphism</h1>
+    
+    <p>Polymorphism allows us to perform a single action in different ways.</p>
+    
+    <h2>Method Overriding</h2>
+    <p>When a child class provides its own implementation of a method already defined in its parent class.</p>
+    
+    <div class="example">
+        <h3>Example</h3>
+        <div class="code">
+<pre>class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):
+    def speak(self):
+        print("Dog barks")
+
+animal = Animal()
+dog = Dog()
+
+animal.speak()  # Output: Animal speaks
+dog.speak()     # Output: Dog barks</pre>
+        </div>
+    </div>
+    
+    <h2>Duck Typing</h2>
+    <p>Python uses duck typing ("if it walks like a duck and quacks like a duck...")</p>
+    
+    <div class="note">
+        <p><strong>Remember:</strong> Polymorphism makes code more flexible and reusable.</p>
+    </div>
+    
+    <div class="nav">
+        <a href="index.html">← Back to Index</a> | 
+        <a href="inheritance.html">Inheritance →</a>
+    </div>
+</body>
+</html>
