@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inheritance - My Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Python Inheritance</h1>
+    
+    <p>Inheritance allows a class to inherit attributes and methods from another class.</p>
+    
+    <h2>Basic Inheritance</h2>
+    <p>A child class inherits all methods and properties from its parent.</p>
+    
+    <div class="example">
+        <h3>Example</h3>
+        <div class="code">
+<pre>class Parent:
+    def __init__(self):
+        self.value = "Parent"
+    
+    def show(self):
+        print(self.value)
+
+class Child(Parent):
+    def __init__(self):
+        super().__init__()
+        self.value = "Child"
+
+parent = Parent()
+child = Child()
+
+parent.show()  # Output: Parent
+child.show()   # Output: Child</pre>
+        </div>
+    </div>
+    
+    <div class="note">
+        <p><strong>Tip:</strong> Use <code>super()</code> to call parent class methods.</p>
+    </div>
+    
+    <div class="nav">
+        <a href="polymorphism.html">← Polymorphism</a> | 
+        <a href="index.html">Back to Index →</a>
+    </div>
+</body>
+</html>
