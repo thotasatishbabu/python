@@ -1,6 +1,6 @@
 // GitHub configuration
-const GITHUB_OWNER = 'your-github-username';
-const GITHUB_REPO = 'your-repo-name';
+const GITHUB_OWNER = 'thotasatishbabu';
+const GITHUB_REPO = 'python';
 const GITHUB_BRANCH = 'main';
 const NOTES_FOLDER = 'notes';
 
