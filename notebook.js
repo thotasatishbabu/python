@@ -2,7 +2,7 @@
 const GITHUB_OWNER = 'thotasatishbabu';
 const GITHUB_REPO = 'python';
 const GITHUB_BRANCH = 'main';
-const NOTES_FOLDER = 'notes';
+const NOTES_FOLDER = 'notes1';
 
 // DOM elements
 const loginBtn = document.getElementById('loginBtn');
