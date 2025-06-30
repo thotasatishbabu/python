@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Programming Notes</title>
+    <title>Editable Notebook</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="notebook.js" defer></script>
 </head>
 <body>
-    <h1>My Programming Notes</h1>
-    
-    <h2>Python Concepts</h2>
-    <ul>
-        <li><a href="polymorphism.html">Polymorphism</a></li>
-        <li><a href="inheritance.html">Inheritance</a></li>
-    </ul>
-    
-    <div class="note">
-        <p>These are my personal notes based on various learning resources.</p>
+    <div class="container">
+        <h1>My Editable Notebook</h1>
+        
+        <div class="auth-section" id="authSection">
+            <button id="loginBtn">Login with GitHub</button>
+            <div id="userInfo" style="display:none;">
+                <span id="username"></span>
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </div>
+        
+        <div class="notebook-container">
+            <div class="sidebar" id="sidebar">
+                <h2>Notes</h2>
+                <ul id="noteList"></ul>
+                <button id="newNoteBtn">+ New Note</button>
+            </div>
+            
+            <div class="editor">
+                <div class="toolbar">
+                    <select id="noteSelector">
+                        <option value="">Select a note to edit</option>
+                    </select>
+                    <button id="saveBtn">Save Changes</button>
+                </div>
+                
+                <textarea id="markdownEditor" spellcheck="false"></textarea>
+                <div id="preview"></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
